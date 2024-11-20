@@ -32,7 +32,7 @@ else:
     try:
         with password_file.open("r", encoding="utf-8", errors="ignore") as file:
             for line in file:
-                password = line.strip()  # Remove leading/trailing whitespace
+                password = line.strip() 
                 hashed_password = get_hash(password)
                 
                 if hashed_password == stored_hash:
